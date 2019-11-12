@@ -127,15 +127,15 @@ syn match   sqlStatement    "\<\(replace\|create\)\>"
 syn keyword sqlStatement    attach detach indexed pragma reindex
 
 " Types - Only matched inside 'CREATE TABLE ();'.
-syn keyword sqlType         contained bigint bit blob bool boolean byte char
+syn keyword sqlType         contained bigint bit blob bool boolean byte char serial bigserial
 syn keyword sqlType         contained clob date datetime dec decimal enum
-syn keyword sqlType         contained float int int8 integer interval long
+syn keyword sqlType         contained float int int8 integer interval long smallint
 syn keyword sqlType         contained longblob longtext lvarchar mediumblob
 syn keyword sqlType         contained mediumint mediumtext mlslabel money
 syn keyword sqlType         contained multiset nchar number numeric nvarchar
 syn keyword sqlType         contained raw real rowid serial serial8 set
-syn keyword sqlType         contained smallfloat smallint text time
-syn keyword sqlType         contained timestamp tinyblob tinyint tinytext
+syn keyword sqlType         contained smallfloat smallint text time string
+syn keyword sqlType         contained timestamp tinyblob tinyint tinytext timestamptz
 syn keyword sqlType         contained varchar varchar2 varray year
 syn match   sqlType         contained "\<\(character\|double\|varying\)\>"
 syn match   sqlType         contained "\<character\s\+varying\>"
